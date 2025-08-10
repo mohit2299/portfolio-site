@@ -1,14 +1,11 @@
-import "./globals.css"; 
-
-export const metadata = {
-  title: "Mohit Gupta — Portfolio",
-  description: "Business Analyst | Data-driven decisions"
-};
+import "./globals.css";
+import { Inter } from "next/font/google";
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${inter.className} bg-neutral-950 text-neutral-100 antialiased`}>{children}</body>
     </html>
   );
 }
