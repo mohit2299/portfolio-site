@@ -15,7 +15,7 @@ export default function Projects() {
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ y: -4 }}
-            className="rounded-2xl border border-neutral-800 p-6 hover:border-neutral-600 transition-colors"
+            className="rounded-2xl border border-neutral-800/60 bg-neutral-900/40 backdrop-blur p-6 hover:border-neutral-600 transition-colors"
           >
             <h3 className="text-xl font-semibold mb-2">{p.title}</h3>
             <p className="text-neutral-400">{p.description}</p>
